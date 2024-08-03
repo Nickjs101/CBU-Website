@@ -1,5 +1,5 @@
 import React from 'react';
-import factorywarehouse from '../assets/herobg.jpeg'
+// import factorywarehouse from '../assets/herobg.jpeg'
 
 const About = () => {
   return (

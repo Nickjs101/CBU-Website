@@ -8,8 +8,8 @@ const Footer = () => {
         <p>7052 Legaspi ext. Duquit-Maisac Mabalacat City Pampanga</p>
         <p>0917-623-7040 | cbuwtm@gmail.com</p>
         <div className="mt-4">
-          <a href="#" className="mr-4 hover:underline">Facebook</a>
-          <a href="#" className="hover:underline">LinkedIn</a>
+          <span className="mr-4 hover:underline">Facebook</span>
+          <span className="hover:underline">LinkedIn</span>
         </div>
       </div>
     </footer>
