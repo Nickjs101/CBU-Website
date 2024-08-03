@@ -16,3 +16,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* VM card */
+.card {
+  @apply w-full h-[22.5em] transition-[1s] duration-[ease-in-out] flex flex-row rounded-tr-[20px] rounded-bl-[20px] my-5 border-2 border-black;
+  background: transparent;
+  clip-path: polygon(
+    30px 0%,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%,
+    0% 30px
+  );
+}
+
+.navbutton {
+  @apply relative before:content-[''] before:absolute before:w-full before:h-0.5 before:bg-white before:origin-center before:-translate-x-2/4 before:translate-y-0 before:transition-transform before:duration-[0.3s] before:ease-[ease-in-out] before:scale-x-0 before:left-2/4 before:bottom-0 hover:before:-translate-x-2/4 hover:before:translate-y-0 hover:before:scale-x-100;
+}
+
+
+
+

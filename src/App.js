@@ -11,9 +11,10 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App bg-neutral-100">
+    <div className="App">
       <Header />
       <Home />
+      
       <About />
       <Products />
       <Projects />
