@@ -8,7 +8,7 @@ const Products = ({gotoContact}) => {
     <section id="products" className="py-16">
       <div className="container mx-auto">
         <h2 className="text-5xl text-center text-red-600 font-bold mb-4">What we offer</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-11">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-8 mt-11">
           {/* Example product card */}
             <div class="relative mx-auto flex w-80 flex-col rounded-xl border-black border-2 bg-clip-border text-gray-700 shadow-md">
                 <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-neutral-900 flex items-center justify-center">

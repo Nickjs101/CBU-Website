@@ -24,10 +24,12 @@ const Header = () => {
     <header id='header' className="bg-gradient-to-b from-black/70 to-black/0 text-white px-4 py-4  fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="flex items-center text-gray-700">
-            <h1 className='text-3xl font-bold text-white hidden lg:block'>CBU Water Tank Manufacturing</h1>
+            <h1 className='hidden md:block text-3xl font-bold text-white'>CBU Water Tank Manufacturing</h1>
+            <h1 className='block md:hidden text-3xl font-bold text-white'>CBU Water Tank Mfg.</h1>
+            
         </a>
         <nav>
-          <ul className="hidden md:flex space-x-4">
+          <ul className="hidden lg:flex space-x-4">
             <li className="navbutton"><a href="#home" onClick={(e) => gotoSection(e, 'home')} >Home</a></li>
             <li className="navbutton"><a href="#about" onClick={(e) => gotoSection(e, 'about')} >About Us</a></li>
             <li className="navbutton"><a href="#products" onClick={(e) => gotoSection(e, 'products')} >Products</a></li>
@@ -36,7 +38,7 @@ const Header = () => {
             <li className="navbutton"><a href="#clients" onClick={(e) => gotoSection(e, 'clients')} >Clients</a></li>
             <li className="navbutton"><a href="#contact" onClick={(e) => gotoSection(e, 'contact')} >Contact Us</a></li>
           </ul>
-          <div onClick={handleNav} className='block md:hidden mr-6'>
+          <div onClick={handleNav} className='block lg:hidden mr-6'>
                     {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
           </div>
 
@@ -47,7 +49,7 @@ const Header = () => {
                 : 'fixed left-[-100%]'
             }
           >
-                    <h1 className='text-xl font-bold primary-color ml-6 mt-6'>CBU Water Tank Manufacturing</h1>
+                    <h1 className='text-xl font-bold primary-color ml-6 mt-6'>CBU Water Tank Mfg.</h1>
                     <ul className='p-8 text-2xl'>
                       <li className="navbutton p-2"><a href="#home" onClick={(e) => {gotoSection(e, 'home'); handleNav();}} >Home</a></li>
                       <li className="navbutton p-2"><a href="#about" onClick={(e) => {gotoSection(e, 'about'); handleNav();}} >About Us</a></li>

@@ -39,18 +39,18 @@ const About = () => {
 
             <div className='w-full px-8 text-black'>
               <div class="card">
-                <div className='w-2/3 p-8'>
-                  <span className='font-[bold] text-left block text-5xl mb-4'>Vision</span>
-                  <p className="italic font-serif block text-left text-lg ">Our vision at CBU WATER TANK MANUFACTURING is to revolutionize the way industries handle fluid storage and distribution challenges. By leveraging cutting-edge technology and unmatched expertise, we strive to be at the forefront of the overhead and pressure tank industry. Our aim is to empower businesses with advanced solutions that promote resource conservation, minimize environmental impact, and drive operational excellence. We envision a world where our tanks are the benchmark of reliability, setting new standards for efficiency, safety, and sustainability in fluid management across various sectors.</p>
+                <div className='w-full md:w-2/3 p-8 overflow-y-scroll'>
+                  <span className='font-[bold] text-left block text-2xl md:text-5xl mb-4'>Vision</span>
+                  <p className="italic font-serif block text-left text-sm md:text-lg">Our vision at CBU WATER TANK MANUFACTURING is to revolutionize the way industries handle fluid storage and distribution challenges. By leveraging cutting-edge technology and unmatched expertise, we strive to be at the forefront of the overhead and pressure tank industry. Our aim is to empower businesses with advanced solutions that promote resource conservation, minimize environmental impact, and drive operational excellence. We envision a world where our tanks are the benchmark of reliability, setting new standards for efficiency, safety, and sustainability in fluid management across various sectors.</p>
                 </div>
-                <img src={vision} alt='Vision' className="w-1/3 h-auto bg-white rounded-tr-[20px]"/>
+                <img src={vision} alt='Vision' className="hidden md:block w-1/3 h-auto bg-white rounded-tr-[20px]"/>
               </div>
 
               <div class="card">
-                <img src={mission} alt='Vision' className="w-1/3 h-auto bg-white rounded-bl-[20px]"/>
-                <div className='w-2/3 p-8'>
-                  <span className='font-[bold] text-right block text-5xl mb-4'>Mission</span>
-                  <p className="italic font-serif block text-right text-lg ">At CBU WATER TANK MANUFACTURING our mission is to be the leading provider of high-quality overhead and pressure tanks. We are committed to engineering innovative solutions that exceed our customers' expectations while ensuring reliability, safety, and efficiency in every product we deliver. Through a dedication to sustainability and continuous improvement, we aim to enhance industries worldwide by optimizing fluid storage and distribution systems for a better, more connected future.</p>
+                <img src={mission} alt='Vision' className="hidden md:block w-1/3 h-auto bg-white rounded-bl-[20px]"/>
+                <div className='w-full md:w-2/3 p-8 overflow-y-scroll'>
+                  <span className='font-[bold] text-left md:text-right block text-2xl md:text-5xl mb-4'>Mission</span>
+                  <p className="italic font-serif block text-left md:text-right text-sm md:text-lg">At CBU WATER TANK MANUFACTURING our mission is to be the leading provider of high-quality overhead and pressure tanks. We are committed to engineering innovative solutions that exceed our customers' expectations while ensuring reliability, safety, and efficiency in every product we deliver. Through a dedication to sustainability and continuous improvement, we aim to enhance industries worldwide by optimizing fluid storage and distribution systems for a better, more connected future.</p>
                 </div>
               </div>
             </div>
