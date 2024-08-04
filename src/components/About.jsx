@@ -5,7 +5,7 @@ import mission from '../assets/mission.png'
 
 const About = () => {
   return (
-    <section id="about" className="pb-16 bg-gray-200">
+    <section id="about" className="pb-16 bg-gray-100">
       <div className='w-full h-auto py-16 text-center bg-neutral-100'>
         <h1 className='font-extrabold text-4xl font-serif text-gray-900'>"<span className='underline'>Your Trusted Partner in Fluid Storage</span>"</h1>
       </div>

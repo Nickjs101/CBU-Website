@@ -60,8 +60,6 @@ const Contact = () => {
             </div>
           </form>
 
-          <h2 className="text-xl font-bold font-serif my-2">Follow us</h2> 
-
         </div>
       </div>
     </section>
