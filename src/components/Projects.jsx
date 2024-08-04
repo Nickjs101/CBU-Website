@@ -5,7 +5,7 @@ import Project3 from '../assets/Projects/Project3.png';
 import Project4 from '../assets/Projects/Project4.png';
 import Project5 from '../assets/Projects/Project5.png';
 
-const Projects = () => {
+const Projects = ({gotoContact}) => {
     const projects = [
         { image: Project1, title: 'Project 1' },
         { image: Project2, title: 'Project 2' },
@@ -45,7 +45,7 @@ const Projects = () => {
                     <p className="mb-4 text-gray-700">
                         At CBU Manufacturing, we take pride in offering high-quality, durable water tanks tailored to meet your specific needs. Our expert team is dedicated to providing innovative solutions for all your water storage requirements. Browse our projects to see our commitment to excellence in action.
                     </p>
-                    <button className="px-4 py-2 bg-red-500 text-white rounded">Contact Us</button>
+                    <button  onClick={(e) => gotoContact(e, 'contact')} className="px-4 py-2 bg-red-500 text-white rounded">Contact Us</button>
                 </div>
             </div>
         </section>

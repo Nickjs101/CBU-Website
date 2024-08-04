@@ -10,13 +10,23 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
+  const gotoContact = (event, id) => {
+    event.preventDefault();
+    const section = document.getElementById(id);
+    // const navbarHeight = document.querySelector('#header').offsetHeight; // get the navbar height
+    window.scrollTo({
+      top: section.offsetTop, // adjust the scroll position
+      behavior: 'smooth',
+    });
+}
+
   return (
     <div className="App">
       <Header />
-      <Home />
+      <Home gotoContact={gotoContact} />
       <About />
-      <Products />
-      <Projects />
+      <Products gotoContact={gotoContact} />
+      <Projects gotoContact={gotoContact} />
       <Process />
       <Clients />
       <Contact />

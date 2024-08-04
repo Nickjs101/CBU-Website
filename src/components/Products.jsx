@@ -3,7 +3,7 @@ import tank from '../assets/PressuredTank.png'
 import guage from '../assets/Guage.png'
 import storage from '../assets/Storage.png'
 
-const Products = () => {
+const Products = ({gotoContact}) => {
   return (
     <section id="products" className="py-16">
       <div className="container mx-auto">
@@ -32,7 +32,7 @@ const Products = () => {
                     </ul>
                 </div>
                 <div class="absolute bottom-0 right-0 p-6 pt-0">
-                  <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-red-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                  <button  onClick={(e) => gotoContact(e, 'contact')} data-ripple-light="true" type="button" class="select-none rounded-lg bg-red-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                     Inquire now
                   </button>
                 </div>
@@ -56,7 +56,7 @@ const Products = () => {
                     </ul>
                 </div>
                 <div class="absolute bottom-0 right-0 p-6 pt-0">
-                  <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-red-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                  <button  onClick={(e) => gotoContact(e, 'contact')} data-ripple-light="true" type="button" class="select-none rounded-lg bg-red-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                     Inquire now
                   </button>
                 </div>
@@ -80,7 +80,7 @@ const Products = () => {
                     </ul>
                 </div>
                 <div class="absolute bottom-0 right-0 p-6 pt-0">
-                  <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-red-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                  <button  onClick={(e) => gotoContact(e, 'contact')} data-ripple-light="true" type="button" class="select-none rounded-lg bg-red-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                     Inquire now
                   </button>
                 </div>
