@@ -5,17 +5,17 @@ import mission from '../assets/mission.png'
 
 const About = () => {
   return (
-    <section id="about" className="pb-16 bg-gray-100">
+    <section className="pb-16 bg-gray-100">
       <div className='w-full h-auto py-16 text-center bg-neutral-100'>
         <h1 className='font-extrabold text-4xl font-serif text-gray-900'>"<span className='underline'>Your Trusted Partner in Fluid Storage</span>"</h1>
       </div>
 
-      <div className="w-full mx-auto">
+      <div  id="about" className="w-full mx-auto">
             <div
               className='w-full h-screen text-neutral-800 flex gap-4 bg-cover bg-center mb-20'
               style={{ backgroundImage: `url(${factorywarehouse})` }}>
               <div className='w-full h-full bg-gradient-to-r from-black/90 to-black/0 py-4 flex flex-col'>
-                <div className='w-2/5 px-8 my-auto'>
+                <div className='w-full md:w-2/5 px-8 my-auto'>
                   <h2 className="text-5xl text-white font-bold mb-4">About CBU Water Tank Manufacturing</h2>
                   <ul className='w-[400px] mb-4 contents text-white text-2xl'>
                     <li>
