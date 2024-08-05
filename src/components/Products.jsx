@@ -5,7 +5,7 @@ import storage from '../assets/Storage.png'
 
 const Products = ({gotoContact}) => {
   return (
-    <section id="products" className="py-16">
+    <section id="products" className="py-16 bg-gray-200">
       <div className="container mx-auto">
         <h2 className="text-5xl text-center text-red-600 font-bold mb-4">What we offer</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-8 mt-11">

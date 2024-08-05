@@ -15,7 +15,7 @@ const Projects = ({gotoContact}) => {
     ];
 
     return (
-        <section id="projects" className="py-16 bg-gray-100">
+        <section id="projects" className="py-16 bg-white">
             <div className="container mx-auto text-center">
                 <h2 className="text-4xl font-bold mb-4">
                     Find a Water Tank Solution with <span className="text-red-500">CBU Manufacturing</span>
