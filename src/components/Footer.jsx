@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto text-center">
         <p className="mb-4">© 2024 CBU Water Tank Manufacturing. All rights reserved.</p>
         <p>7052 Legaspi ext. Duquit-Maisac Mabalacat City Pampanga</p>
-        <p>0917-623-7040 | cbuwtm@gmail.com</p>
+        <p>0917-623-7040 | cbutanks@gmail.com</p>
         <div className="mt-4">
           <a href='https://www.facebook.com/profile.php?id=61563526510118&mibextid=ZbWKwL' className="mr-4 hover:underline">Facebook</a>
           {/* <span className="hover:underline">LinkedIn</span> */}

@@ -19,7 +19,7 @@ const Contact = () => {
             </div>
             <div className="mb-4 inline-block">
               <h3 className="text-gray-400 text-xs">Email</h3>
-              <p>cbuwtm@gmail.com</p>
+              <p>cbutanks@gmail.com</p>
             </div>
           </div>
           
