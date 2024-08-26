@@ -1,5 +1,5 @@
 import React from 'react';
-import factorywarehouse from '../assets/herobg.jpeg'
+import factorywarehouse from '../assets/Owners.jpg'
 import vision from '../assets/vission.jpg'
 import mission from '../assets/mission.png'
 
@@ -7,12 +7,14 @@ const About = () => {
   return (
     <section className="pb-16 bg-white">
       <div className='w-full h-auto py-16 text-center bg-neutral-100'>
-        <h1 className='font-extrabold text-4xl font-serif text-gray-900'>"<span className='underline'>Your Trusted Partner in Fluid Storage</span>"</h1>
+        <h1 className='font-extrabold text-4xl font-serif text-gray-900'>"<span className='underline'>Let us not grow tired of doing good, we shall reap and harvest if we do not give up....
+        </span>"</h1>
+        <p>- Owner</p>
       </div>
 
       <div  id="about" className="w-full mx-auto">
             <div
-              className='w-full h-screen text-neutral-800 flex gap-4 bg-cover bg-center mb-20'
+              className='w-full h-screen text-neutral-800 flex gap-4 bg-center bg-cover mb-20'
               style={{ backgroundImage: `url(${factorywarehouse})` }}>
               <div className='w-full h-full bg-gradient-to-r from-black/90 to-black/0 py-4 flex flex-col'>
                 <div className='w-full md:w-2/5 px-8 my-auto'>
