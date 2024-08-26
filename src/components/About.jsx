@@ -1,15 +1,13 @@
 import React from 'react';
 import factorywarehouse from '../assets/Owners.jpg'
-import vision from '../assets/vission.jpg'
-import mission from '../assets/mission.png'
+import vision from '../assets/Vision.jpg'
+import mission from '../assets/Mission.jpg'
 
 const About = () => {
   return (
     <section className="pb-16 bg-white">
       <div className='w-full h-auto py-16 text-center bg-neutral-100'>
-        <h1 className='font-extrabold text-4xl font-serif text-gray-900'>"<span className='underline'>Let us not grow tired of doing good, we shall reap and harvest if we do not give up....
-        </span>"</h1>
-        <p>- Owner</p>
+        <h1 className='font-extrabold text-4xl font-serif text-gray-900'>"<span className='underline'>Your Trusted Partner in Fluid Storage</span>"</h1>
       </div>
 
       <div  id="about" className="w-full mx-auto">

@@ -52,11 +52,6 @@ const processSteps = [
     description: 'Our bending process transforms flat materials into curved structures with precision. Advanced bending equipment and skilled operators ensure that each bend meets the exact requirements, providing structural integrity and durability.',
   },
   {
-    title: 'Beating',
-    image: beatingImage,
-    description: 'The beating process further refines the shape and form of materials, ensuring that each component is perfectly crafted for the assembly stages. This step adds additional strength and smoothness to the materials.',
-  },
-  {
     title: 'Punching',
     image: punchingImage,
     description: 'Punching allows us to create precise holes and shapes in the material, essential for assembling components seamlessly. Our high-precision punching machines ensure every cut is clean and exact, maintaining the strength and reliability of the tanks.',
@@ -65,6 +60,11 @@ const processSteps = [
     title: 'Molding',
     image: moldingImage,
     description: 'In the molding stage, we shape materials into complex forms using high-quality molds and advanced techniques. This process ensures uniformity and consistency, providing a strong foundation for the next stages of production.',
+  },
+  {
+    title: 'Beating',
+    image: beatingImage,
+    description: 'The beating process further refines the shape and form of materials, ensuring that each component is perfectly crafted for the assembly stages. This step adds additional strength and smoothness to the materials.',
   },
   {
     title: 'Welding',

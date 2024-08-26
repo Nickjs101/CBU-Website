@@ -4,14 +4,36 @@ import Project2 from '../assets/Projects/Project2.png';
 import Project3 from '../assets/Projects/Project3.png';
 import Project4 from '../assets/Projects/Project4.png';
 import Project5 from '../assets/Projects/Project5.png';
+import Project6 from '../assets/Projects/Project6.jpg';
+import Project7 from '../assets/Projects/Project7.jpg';
+import Project8 from '../assets/Projects/Project8.jpg';
+import Project9 from '../assets/Projects/Project9.jpg';
+import Project10 from '../assets/Projects/Project10.jpg';
+import Project11 from '../assets/Projects/Project11.jpg';
+import Project12 from '../assets/Projects/Project12.jpg';
+import Project13 from '../assets/Projects/Project13.jpg';
+import Project14 from '../assets/Projects/Project14.jpg';
+import Project16 from '../assets/Projects/Project16.jpg';
+import Project17 from '../assets/Projects/Project17.jpg';
 
 const Projects = ({gotoContact}) => {
     const projects = [
         { image: Project1, title: 'Project 1' },
+        { image: Project6, title: 'Project 5' },
+        { image: Project7, title: 'Project 5' },
+        { image: Project5, title: 'Project 5' },
+        { image: Project8, title: 'Project 5' },
+        { image: Project9, title: 'Project 5' },
         { image: Project2, title: 'Project 2' },
+        { image: Project10, title: 'Project 5' },
+        { image: Project11, title: 'Project 5' },
+        { image: Project12, title: 'Project 5' },
         { image: Project3, title: 'Project 3' },
+        { image: Project13, title: 'Project 5' },
+        { image: Project14, title: 'Project 5' },
+        { image: Project16, title: 'Project 5' },
         { image: Project4, title: 'Project 4' },
-        { image: Project5, title: 'Project 5' }
+        { image: Project17, title: 'Project 5' },
     ];
 
     return (
