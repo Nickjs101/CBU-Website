@@ -5,6 +5,7 @@ import About from './components/About';
 import Products from './components/Products';
 import Projects from './components/Projects';
 import Process from './components/Process';
+import Team from './components/Team';
 import Clients from './components/Clients';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -28,6 +29,7 @@ function App() {
       <Products gotoContact={gotoContact} />
       <Projects gotoContact={gotoContact} />
       <Process />
+      <Team />
       <Clients />
       <Contact />
       <Footer />

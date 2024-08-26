@@ -1,5 +1,5 @@
 import React from 'react';
-import product1 from '../assets/welder.png'; // Adjust the path as needed
+import product1 from '../assets/welder.png'// Adjust the path as needed
 import logo from '../assets/Logo.png';
 
 const Home = ({gotoContact}) => {
