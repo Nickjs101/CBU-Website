@@ -25,7 +25,7 @@ const Testimonial = ({name, message, title, image}) => {
             backgroundImage: `url(${image})`,
           }}
         >
-            <div className="absolute -left-14 bottom-40 bg-[#24abc8] text-white text-[100px] rounded-full w-24 h-24 p-4 flex items-center justify-center">
+            <div className="absolute -left-14 bottom-40 bg-[#c82424] text-white text-[100px] rounded-full w-24 h-24 p-4 flex items-center justify-center">
                 <FontAwesomeIcon icon="fa-solid fa-quote-left" size='2xs' style={{color: "#ffffff",}} />
             </div>
         </div>

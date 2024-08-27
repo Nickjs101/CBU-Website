@@ -49,8 +49,8 @@ const About = () => {
 
             {/* Owners Message */}
 
-            <Message name="Candelaria Dantes Untalan" message='“Let us not grow tired of doing good, we shall reap and harvest if we do not give up.”' title='Owner - CBU Water Tank Manufacturing' image={owner}/>
-            <Message name="Benigno Lazaro Untalan" message='“Success is not just about building a business; it`s about honoring the legacy of those who inspired you. Let every milestone be a testament to the love, support, and values your family instilled in you.”' title='Founder/General Manager - CBU Water Tank Manufacturing' image={founder}/>
+            <Message name="Candelaria Dantes Untalan" message='“Let us not grow tired of doing good, we shall reap and harvest if we do not give up.”' title='Owner' image={owner}/>
+            <Message name="Benigno Lazaro Untalan" message='“Success is not just about building a business; it`s about honoring the legacy of those who inspired you. Let every milestone be a testament to the love, support, and values your family instilled in you.”' title='Founder/General Manager' image={founder}/>
 
             {/* Vision and Mission */}
             <div className='w-full px-8 text-black'>
