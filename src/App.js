@@ -10,6 +10,12 @@ import Clients from './components/Clients';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faQuoteLeft);
+
 function App() {
   const gotoContact = (event, id) => {
     event.preventDefault();

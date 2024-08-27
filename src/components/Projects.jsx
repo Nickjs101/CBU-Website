@@ -37,7 +37,7 @@ const Projects = ({gotoContact}) => {
     ];
 
     return (
-        <section id="projects" className="py-16 bg-white">
+        <section id="projects" className="py-16">
             <div className="container mx-auto text-center">
                 <h2 className="text-4xl font-bold mb-4">
                     Find a Water Tank Solution with <span className="text-red-500">CBU Manufacturing</span>
@@ -52,7 +52,7 @@ const Projects = ({gotoContact}) => {
                     {projects.concat(projects).map((project, index) => (
                         <div 
                             key={index} 
-                            className="relative bg-white rounded-xl shadow-lg min-w-[300px] bg-contain bg-center bg-no-repeat h-64 flex-shrink-0 m-2"
+                            className="relative bg-white rounded-xl shadow-lg min-w-[300px] bg-cover bg-center bg-no-repeat h-64 flex-shrink-0 m-2"
                             style={{ backgroundImage: `url(${project.image})` }}
                         >
                             {/* <div className="w-full p-4 rounded-xl bg-gradient-to-t from-black/50 via-black/10 to-black/0 h-full flex flex-col align-bottom">

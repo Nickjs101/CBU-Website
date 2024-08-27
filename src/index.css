@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @apply bg-neutral-100;
 }
 
 code {
@@ -125,4 +126,5 @@ code {
   white-space: nowrap;
   animation: scroll 10s linear infinite;
 }
+
 
