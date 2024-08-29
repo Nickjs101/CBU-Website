@@ -7,7 +7,8 @@ const Products = ({gotoContact}) => {
   return (
     <section id="products" className="py-16">
       <div className="container mx-auto">
-        <h2 className="text-5xl text-center text-red-600 font-bold mb-4">What we offer</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl text-center text-red-600 font-bold mb-4">Explore Our Premium Water Tank Solutions</h2>
+        <p className=" text-sm md:text-lg text-center mb-24">At CBU Water Tank Manufacturing, we specialize in high-quality pressurized tanks, durable gauges, and customizable storage tanks. Our products are designed to meet diverse fluid storage needs, ensuring <span className='text-red-600 text-md md:text-xl font-extrabold'> Safety </span>, <span className='text-red-600 text-md md:text-xl font-extrabold'>Reliability</span>, and <span className='text-red-600 text-md md:text-xl font-extrabold'>Efficiency</span>. Whether you're looking for a 12-gallon pressurized tank with a base or a fully customized 525-gallon storage tank, we have the perfect solution for you. Our gauges come in various sizes, tailored to fit your specific requirements. <span className='text-md md:text-xl text-red-600 font-bold italic'> Trust CBU for robust and reliable fluid management solutions.</span></p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-8 mt-11">
           {/* Example product card */}
             <div class="relative mx-auto flex w-80 flex-col rounded-xl border-black border-2 bg-clip-border text-gray-700 shadow-md">

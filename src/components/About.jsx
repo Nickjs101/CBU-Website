@@ -1,6 +1,5 @@
 import React from 'react';
 import factorywarehouse from '../assets/Owners.jpg'
-import vision from '../assets/Vision.jpg'
 import mission from '../assets/Mission.jpg'
 
 import owner from '../assets/owner.jpg'
@@ -17,16 +16,16 @@ const About = () => {
         <h1 className='font-extrabold text-4xl font-serif text-gray-900'>"<span className='underline'>Your Trusted Partner in Fluid Storage</span>"</h1>
       </div>
 
-      <div  id="about" className="w-full mx-auto">
+      <div  id="about" className="w-full mx-auto -mb-80 md:mb-0">
 
             {/* About */}
             <div
-              className='w-full h-screen text-neutral-800 flex gap-4 bg-center bg-cover mb-20'
+              className='w-full h-screen text-neutral-800 flex gap-4 bg-center bg-contain md:bg-cover bg-no-repeat mb-20'
               style={{ backgroundImage: `url(${factorywarehouse})` }}>
-              <div className='w-full h-full bg-gradient-to-r from-black/90 to-black/0 py-4 flex flex-col'>
-                <div className='w-full md:w-2/5 px-8 my-auto'>
-                  <h2 className="text-5xl text-white font-bold mb-4">About CBU Water Tank Manufacturing</h2>
-                  <ul className='w-[400px] mb-4 contents text-white text-2xl'>
+              <div className='w-full h-full md:bg-gradient-to-r from-black/90 to-black/0 py-4 flex flex-col'>
+                <div className='w-full md:w-2/5 px-4 md:px-8 md:my-auto text-black md:text-white'>
+                  <h2 className="text-3xl md:text-5xl font-bold mb-4">About CBU Water Tank Manufacturing</h2>
+                  <ul className='w-[400px] mb-4 contents text-md md:text-2xl'>
                     <li>
                       Family-owned company registered in the Philippines since 1995. 
                     </li>
@@ -45,33 +44,33 @@ const About = () => {
               </div>
               
             </div>
+      </div>
 
 
-            {/* Owners Message */}
-            <Message name="Benigno Lazaro Untalan" message='“Success is not just about building a business; it`s about honoring the legacy of those who inspired you. Let every milestone be a testament to the love, support, and values your family instilled in you.”' title='Founder/General Manager' image={founder}/>
+      {/* Owners Message */}
+      <Message name="Benigno Lazaro Untalan" message='“Success is not just about building a business; it`s about honoring the legacy of those who inspired you. Let every milestone be a testament to the love, support, and values your family instilled in you.”' title='Founder/General Manager' image={founder}/>
             <Message name="Candelaria Dantes Untalan" message='“Let us not grow tired of doing good, we shall reap and harvest if we do not give up.”' title='Owner' image={owner}/>
 
             {/* Vision and Mission */}
-            <div className='w-full px-8 text-black'>
-              <div class="card">
-                <div className='w-full md:w-2/3 p-8'>
-                  <span className='font-[bold] text-left block text-2xl md:text-5xl mb-4'>Vision</span>
-                  <p className="italic font-serif block text-left text-sm md:text-lg">Our vision at CBU WATER TANK MANUFACTURING is to revolutionize the way industries handle fluid storage and distribution challenges. By leveraging cutting-edge technology and unmatched expertise, we strive to be at the forefront of the overhead and pressure tank industry. Our aim is to empower businesses with advanced solutions that promote resource conservation, minimize environmental impact, and drive operational excellence. We envision a world where our tanks are the benchmark of reliability, setting new standards for efficiency, safety, and sustainability in fluid management across various sectors.</p>
-                </div>
-                <img src={vision} alt='Vision' className="hidden md:block w-1/3 h-auto bg-white rounded-tr-[20px]"/>
-              </div>
+            <div className='w-full md:px-8 text-black h-auto min-h-[80vh] bg-cover bg-center bg-fixed'style={{ backgroundImage: `url(${mission})` }}>
 
-              <div class="card">
-                <img src={mission} alt='Vision' className="hidden md:block w-1/3 h-auto bg-white rounded-bl-[20px]"/>
-                <div className='w-full md:w-2/3 p-8'>
-                  <span className='font-[bold] text-left md:text-right block text-2xl md:text-5xl mb-4'>Mission</span>
-                  <p className="italic font-serif block text-left md:text-right text-sm md:text-lg">At CBU WATER TANK MANUFACTURING our mission is to be the leading provider of high-quality overhead and pressure tanks. We are committed to engineering innovative solutions that exceed our customers' expectations while ensuring reliability, safety, and efficiency in every product we deliver. Through a dedication to sustainability and continuous improvement, we aim to enhance industries worldwide by optimizing fluid storage and distribution systems for a better, more connected future.</p>
+              <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 xl:p-24 text-white">
+                <div className='h-full w-full '>
+                  <div className='bg-slate-950 lg:max-w-[500px] max-w-full h-full p-8 md:p-16 mx-auto'>
+                    <h1 className='font-mono text-3xl md:text-5xl mb-4'>Vision</h1>
+                    <p className="font-sans text-sm md:text-lg text-neutral-200">Our vision at CBU WATER TANK MANUFACTURING is to revolutionize the way industries handle fluid storage and distribution challenges. By leveraging cutting-edge technology and unmatched expertise, we strive to be at the forefront of the overhead and pressure tank industry. Our aim is to empower businesses with advanced solutions that promote resource conservation, minimize environmental impact, and drive operational excellence. We envision a world where our tanks are the benchmark of reliability, setting new standards for efficiency, safety, and sustainability in fluid management across various sectors.</p>
+                  </div>
                 </div>
+                <div className='h-full w-full '>
+                  <div className='bg-slate-950 lg:max-w-[500px] max-w-full h-full p-8 md:p-16 mx-auto'>
+                    <h1 className='font-mono text-3xl md:text-5xl mb-4'>Mission</h1>
+                    <p className="font-sans text-sm md:text-lg text-neutral-200">At CBU WATER TANK MANUFACTURING our mission is to be the leading provider of high-quality overhead and pressure tanks. We are committed to engineering innovative solutions that exceed our customers' expectations while ensuring reliability, safety, and efficiency in every product we deliver. Through a dedication to sustainability and continuous improvement, we aim to enhance industries worldwide by optimizing fluid storage and distribution systems for a better, more connected future.</p>
+                  </div>
+                </div>
+                
+                
               </div>
             </div>
-            
-        
-      </div>
       
     </section>
   );

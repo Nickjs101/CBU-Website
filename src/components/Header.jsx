@@ -29,7 +29,7 @@ const Header = () => {
             
         </a>
         <nav>
-          <ul className="hidden lg:flex space-x-4">
+          <ul className="hidden lg:flex space-x-4 font-bold">
             <li className="navbutton"><a href="#home" onClick={(e) => gotoSection(e, 'home')} >Home</a></li>
             <li className="navbutton"><a href="#about" onClick={(e) => gotoSection(e, 'about')} >About Us</a></li>
             <li className="navbutton"><a href="#products" onClick={(e) => gotoSection(e, 'products')} >Products</a></li>
