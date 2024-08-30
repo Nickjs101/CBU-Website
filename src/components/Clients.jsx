@@ -63,7 +63,7 @@ const Clients = () => {
   return (
     <section id="clients" className="py-16 bg-gray-100">
       <div className="container mx-auto">
-        <h2 className="text-5xl font-bold mb-4 text-center md:text-left">Our Clients</h2>
+        <h2 className="article-h font-bold mb-4 text-center md:text-left">Our Clients</h2>
         <div className="flex flex-col gap-8">
           <div>
             <h3 className="text-xl font-bold mb-2 bg-gray-800 pl-4 text-white">Hardware & Construction Supply</h3>

@@ -11,9 +11,9 @@ const About = () => {
               <div className='w-full h-full md:bg-gradient-to-b from-black/90 via-black/0 to-black/0 py-4 flex flex-col'>
 
                 <div className='text-black md:text-white w-full text-center  mx-auto pt-4 md:pt-16'>
-                  <h2 className="text-3xl md:text-5xl  font-bold mb-4">The Experts Behind Our Success</h2>
-                  <p className='w-[400px] mb-4 contents text-md md:text-2xl'>
-                    Discover the talented individuals driving our innovation. Our team is a dynamic mix of seasoned professionals and creative problem-solvers, all dedicated to delivering exceptional quality and service. With a shared passion for excellence, we work together to bring you the best in the industry.
+                  <h2 className="article-h  font-bold mb-4">The Experts Behind Our Success</h2>
+                  <p className='w-[400px] mb-4 contents article-p'>
+                    Discover the talented individuals driving our innovation. Our team is a dynamic mix of seasoned professionals and creative problem-solvers with a passion for excellence that deliver top-quality water storage solutions, ensuring the highest standards in every product we create.
                   </p>
                 </div>
                 

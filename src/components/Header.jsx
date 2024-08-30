@@ -21,7 +21,7 @@ const Header = () => {
     }
 
   return (
-    <header id='header' className="bg-gradient-to-b from-black/70 to-black/0 text-white px-4 py-4  fixed top-0 left-0 w-full z-50">
+    <header id='header' className="bg-gradient-to-b from-black/70 to-black/0 text-white px-4 py-8  fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="flex items-center text-gray-700">
             <h1 className='hidden md:block text-3xl font-bold text-white'>CBU Water Tank Manufacturing</h1>
@@ -45,18 +45,24 @@ const Header = () => {
           <div
             className={
               nav
-                ? 'fixed left-0 top-0 h-full w-[60%] bg-gray-600 bg-opacity-30 backdrop-blur-md border border-white/20 z-10 ease-in-out duration-500'
+                ? 'fixed left-0 top-0 h-full w-[60%] bg-neutral-800 border border-white/20 z-10 ease-in-out duration-500'
                 : 'fixed left-[-100%]'
             }
           >
-                    <h1 className='text-xl font-bold primary-color ml-6 mt-6'>CBU Water Tank Mfg.</h1>
+                    <h1 className='text-2xl font-bold primary-color ml-6 mt-6'>CBU Water Tank Mfg.</h1>
                     <ul className='p-8 text-2xl'>
                       <li className="navbutton p-2"><a href="#home" onClick={(e) => {gotoSection(e, 'home'); handleNav();}} >Home</a></li>
+                      <hr />
                       <li className="navbutton p-2"><a href="#about" onClick={(e) => {gotoSection(e, 'about'); handleNav();}} >About Us</a></li>
+                      <hr />
                       <li className="navbutton p-2"><a href="#products" onClick={(e) => {gotoSection(e, 'products'); handleNav();}} >Products</a></li>
+                      <hr />
                       <li className="navbutton p-2"><a href="#projects" onClick={(e) => {gotoSection(e, 'projects'); handleNav();}} >Projects</a></li>
+                      <hr />
                       <li className="navbutton p-2"><a href="#process" onClick={(e) => {gotoSection(e, 'process'); handleNav();}} >Our Process</a></li>
+                      <hr />
                       <li className="navbutton p-2"><a href="#clients" onClick={(e) => {gotoSection(e, 'clients'); handleNav();}} >Clients</a></li>
+                      <hr />
                       <li className="navbutton p-2"><a href="#contact" onClick={(e) => {gotoSection(e, 'contact'); handleNav();}} >Contact Us</a></li>
                     </ul>
           </div>

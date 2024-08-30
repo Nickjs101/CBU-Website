@@ -9,37 +9,39 @@ import Message from '../components/Message';
 
 const About = () => {
   return (
-    <section className="pb-16">
+    <section >
 
       {/* Quotes */}
       <div className='w-full h-auto py-16 text-center bg-neutral-100'>
         <h1 className='font-extrabold text-4xl font-serif text-gray-900'>"<span className='underline'>Your Trusted Partner in Fluid Storage</span>"</h1>
       </div>
 
-      <div  id="about" className="w-full mx-auto -mb-80 md:mb-0">
+      <div  id="about" className="w-full h-auto mx-auto md:mb-0">
 
             {/* About */}
             <div
-              className='w-full h-screen text-neutral-800 flex gap-4 bg-center bg-contain md:bg-cover bg-no-repeat mb-20'
+              className='w-full h-auto xl:h-screen text-neutral-800 flex gap-4 bg-center bg-contain md:bg-cover bg-no-repeat mb-20'
               style={{ backgroundImage: `url(${factorywarehouse})` }}>
-              <div className='w-full h-full md:bg-gradient-to-r from-black/90 to-black/0 py-4 flex flex-col'>
-                <div className='w-full md:w-2/5 px-4 md:px-8 md:my-auto text-black md:text-white'>
-                  <h2 className="text-3xl md:text-5xl font-bold mb-4">About CBU Water Tank Manufacturing</h2>
-                  <ul className='w-[400px] mb-4 contents text-md md:text-2xl'>
+              <div className='w-full h-full bg-neutral-900 lg:bg-transparent lg:bg-gradient-to-r from-black/90 to-black/0 py-8 flex flex-col'>
+                <div className='h-auto w-full lg:w-3/5 xl:w-2/5 pl-4 lg:pl-16 md:my-auto text-neutral-200'>
+                  <h2 className="article-h font-bold mb-4">About CBU Water Tank Manufacturing</h2>
+                  <ul className='w-[400px] mb-4 contents article-p space-y-3'>
                     <li>
-                      Family-owned company registered in the Philippines since 1995. 
+                    CBU Water Tank Manufacturing is a family-owned business with a rich history of providing top-quality water storage solutions in the Philippines. Originally established in 1988 as BLU Untalan Company in Angeles City, our company has been a trusted name in the industry for decades.
                     </li>
                     <li>
-                      Established in 1988 in Angeles City as BLU Untalan Company. 
+                    In 1995, we took a significant step forward by registering as CBU Water Tank Manufacturing and establishing a full-scale factory dedicated to producing durable and reliable water tanks. This expansion marked the beginning of our journey to becoming a leading water tank manufacturer in the Philippines.
                     </li>
                     <li>
-                      Full-blown factory established in 1995. 
+                    By 1996, our commitment to quality and customer satisfaction enabled us to expand our operations across different regions of the Philippines. Today, we continue to serve a diverse clientele, offering a wide range of water storage solutions designed to meet the unique needs of residential, commercial, and industrial clients nationwide.
                     </li>
                     <li>
-                      Expanded to different regions in the Philippines in 1996.
+                    With a legacy of excellence and a future focused on innovation, CBU Water Tank Manufacturing remains your trusted partner for all your water storage needs.
                     </li>
                   </ul>
+                  
                 </div>
+                <img className='w-full h-auto mt-4 block lg:hidden px-4' src={factorywarehouse} alt="" />
                 
               </div>
               
@@ -52,7 +54,7 @@ const About = () => {
             <Message name="Candelaria Dantes Untalan" message='“Let us not grow tired of doing good, we shall reap and harvest if we do not give up.”' title='Owner' image={owner}/>
 
             {/* Vision and Mission */}
-            <div className='w-full md:px-8 text-black h-auto min-h-[80vh] bg-cover bg-center bg-fixed'style={{ backgroundImage: `url(${mission})` }}>
+            <div className='mt-16 w-full md:px-8 text-black h-auto min-h-[80vh] bg-cover bg-center bg-fixed'style={{ backgroundImage: `url(${mission})` }}>
 
               <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 xl:p-24 text-white">
                 <div className='h-full w-full '>

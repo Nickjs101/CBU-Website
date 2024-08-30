@@ -32,10 +32,10 @@ function App() {
       <Header />
       <Home gotoContact={gotoContact} />
       <About />
+      <Team />
       <Products gotoContact={gotoContact} />
       <Projects gotoContact={gotoContact} />
       <Process />
-      <Team />
       <Clients />
       <Contact />
       <Footer />

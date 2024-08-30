@@ -18,7 +18,7 @@ const Process = () => {
   return (
     <section id="process" className="py-16 bg-neutral-800 ">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-bold mb-8 text-center text-white">Our Process</h2>
+        <h2 className="article-h font-bold mb-8 text-center text-white">Our Process</h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {processSteps.map((step, index) => (
             <div key={index}>
@@ -39,57 +39,57 @@ const processSteps = [
   {
     title: 'Measuring',
     image: measuringImage,
-    description: 'Accurate measurements are the foundation of our manufacturing process. Our expert technicians use advanced tools and techniques to ensure every dimension meets exact specifications, guaranteeing the highest standards of precision and quality.',
+    description: 'Precision is at the heart of our manufacturing process. Our expert technicians use advanced tools to take accurate measurements, ensuring every dimension meets exact specifications for top-quality water tanks.',
   },
   {
     title: 'Cutting',
     image: cuttingImage,
-    description: 'Precision cutting is essential to create the perfect components for our tanks. Using state-of-the-art machinery, we cut raw materials with meticulous accuracy to ensure every piece fits perfectly into our final product.',
+    description: 'With state-of-the-art machinery, we execute precision cutting of raw materials to create perfect components. This meticulous process ensures each piece fits seamlessly into our high-quality water tanks.',
   },
   {
     title: 'Bending',
     image: bendingImage,
-    description: 'Our bending process transforms flat materials into curved structures with precision. Advanced bending equipment and skilled operators ensure that each bend meets the exact requirements, providing structural integrity and durability.',
+    description: 'Our advanced bending equipment transforms flat materials into precise curved structures. This critical process ensures each bend meets exact requirements, contributing to the durability and structural integrity of our water tanks.',
   },
   {
     title: 'Punching',
     image: punchingImage,
-    description: 'Punching allows us to create precise holes and shapes in the material, essential for assembling components seamlessly. Our high-precision punching machines ensure every cut is clean and exact, maintaining the strength and reliability of the tanks.',
+    description: 'We utilize high-precision punching machines to create exact holes and shapes, essential for seamless assembly. This process maintains the strength and reliability of our water tanks by ensuring clean, precise cuts.',
   },
   {
     title: 'Molding',
     image: moldingImage,
-    description: 'In the molding stage, we shape materials into complex forms using high-quality molds and advanced techniques. This process ensures uniformity and consistency, providing a strong foundation for the next stages of production.',
+    description: 'During the molding stage, we shape materials into complex forms using high-quality molds. This process guarantees uniformity, laying a strong foundation for our durable and consistent water tanks.',
   },
   {
     title: 'Beating',
     image: beatingImage,
-    description: 'The beating process further refines the shape and form of materials, ensuring that each component is perfectly crafted for the assembly stages. This step adds additional strength and smoothness to the materials.',
+    description: 'Beating refines the shape and form of materials, enhancing their strength and smoothness. This step ensures each component is perfectly crafted, ready for the assembly of our high-standard water tanks.',
   },
   {
     title: 'Welding',
     image: weldingImage,
-    description: 'Welding is a critical step in our manufacturing process, ensuring the components are securely joined. Our experienced welders use the latest welding technologies to create strong, leak-proof joints that enhance the tank\'s overall strength and durability.',
+    description: 'Welding is crucial for securely joining tank components. Our skilled welders use the latest techniques to create leak-proof joints, ensuring the overall strength and longevity of our water tanks.',
   },
   {
     title: 'Coupling',
     image: couplingImage,
-    description: 'In the coupling stage, we carefully join the welded components together to form a cohesive unit. This ensures that all parts of the tank are securely connected, providing both structural integrity and functionality.',
+    description: 'In the coupling stage, we meticulously join welded components to form a cohesive unit. This process guarantees structural integrity and functionality, ensuring our tanks are reliable and robust.',
   },
   {
     title: 'Testing',
     image: testingImage,
-    description: 'Before any tank leaves our facility, it undergoes rigorous testing to ensure it meets our stringent quality standards. We conduct various tests, including pressure and leak tests, to guarantee the tank\'s performance and safety in real-world applications.',
+    description: 'Before our tanks reach you, they undergo rigorous testing, including pressure and leak tests. This ensures every water tank meets our stringent quality standards for safety and performance in real-world conditions.',
   },
   {
     title: 'Painting',
     image: paintingImage,
-    description: 'Painting adds a protective layer and enhances the tank\'s appearance. We apply high-quality paints that resist corrosion and wear, ensuring a long-lasting finish that meets aesthetic and functional standards.',
+    description: 'Our painting process not only enhances the appearance of our water tanks but also provides a protective layer. We use high-quality, corrosion-resistant paints to ensure a long-lasting, durable finish.',
   },
   {
     title: 'Finishing',
     image: finishingImage,
-    description: 'The finishing process adds the final touches to our tanks, ensuring they not only perform exceptionally but also look great. We apply protective coatings, polish surfaces, and conduct a final inspection to ensure every tank meets our high standards of quality and aesthetics.',
+    description: 'The final step, finishing, involves applying protective coatings, polishing surfaces, and conducting a thorough inspection. This ensures that each water tank not only performs exceptionally but also meets our high aesthetic standards.',
   },
 ];
 

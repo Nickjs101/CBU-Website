@@ -39,10 +39,10 @@ const Projects = ({gotoContact}) => {
     return (
         <section id="projects" className="py-16">
             <div className="container mx-auto text-center">
-                <h2 className="text-4xl font-bold mb-4">
+                <h2 className="article-h font-bold mb-4">
                     Find a Water Tank Solution with <span className="text-red-500">CBU Manufacturing</span>
                 </h2>
-                <h2 className="text-4xl font-bold mb-4">
+                <h2 className="article-h font-bold mb-4">
                     Here's Our Projects
                 </h2>
                 
@@ -64,7 +64,7 @@ const Projects = ({gotoContact}) => {
             </div>
 
                 <div className="mt-8">
-                    <p className="mb-4 text-gray-700">
+                    <p className="mb-4 article-p text-gray-700">
                         At CBU Manufacturing, we take pride in offering high-quality, durable water tanks tailored to meet your specific needs. Our expert team is dedicated to providing innovative solutions for all your water storage requirements. Browse our projects to see our commitment to excellence in action.
                     </p>
                     <button  onClick={(e) => gotoContact(e, 'contact')} className="px-4 py-2 bg-red-500 text-white rounded">Contact Us</button>

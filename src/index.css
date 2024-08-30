@@ -112,3 +112,11 @@ code {
   white-space: nowrap;
   animation: scroll 10s linear infinite;
 }
+
+.article-h{
+  @apply text-4xl lg:text-5xl;
+}
+
+.article-p{
+  @apply lg:text-2xl
+}

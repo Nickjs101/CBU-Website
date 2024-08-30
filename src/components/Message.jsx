@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Testimonial = ({name, message, title, image}) => {
   return (
-    <div className="w-full my-16 px-8 md:px-0">
+    <div className="w-full py-16 px-8 md:px-0">
       <div className="bg-white max-w-[1200px] h-auto md:h-[90vh] mx-auto shadow-xl flex flex-col md:flex-row ">
         <div className=" py-8 p-0 md:w-2/3 flex flex-col justify-center items-center md:items-start">
             <div className="bg-contain bg-center relative w-[150px] h-[150px] md:w-1/3 rounded-full flex md:hidden"style={{backgroundImage: `url(${image})`,}}>
