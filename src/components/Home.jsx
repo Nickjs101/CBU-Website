@@ -9,7 +9,7 @@ const Home = ({gotoContact}) => {
         <img src={logo} alt='Logo' className='absolute left-0 w-[500px] opacity-40' />
         <h1 className="text-5xl font-bold mb-4 z-10 text-center">Makers of High Quality Pressurized and Storage Tanks</h1>
         <p className="text-2xl mb-8 z-10">since 1988</p>
-        <a href="#products" onClick={(e) => gotoContact(e, 'contact')} className="bg-red-600 px-6 py-3 rounded z-10">Get a Quote</a>
+        <a href="#products" onClick={(e) => gotoContact(e, 'contact')} className="border-2 font-bold  px-6 py-3 z-10">GET A QUOTE</a>
       </div>
     </section>
   );
