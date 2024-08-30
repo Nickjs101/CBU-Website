@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="">
+    <section id="contact" className="bg-neutral-50">
       <div className="w-full h-auto md:h-auto lg:h-screen flex flex-col-reverse md:flex-row">
         <iframe title='CBUmap' className='w-full md:w-1/2 h-auto' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5414.835889867087!2d120.61136980865196!3d15.18074911670172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396ed12643ccb23%3A0x58d30a11f0502da4!2sCBU%20Water%20Tank%20Manufacturing!5e0!3m2!1sen!2sph!4v1722836303076!5m2!1sen!2sph"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div className='w-full md:w-1/2 p-4 md:p-12 lg:pr-36 '>
@@ -58,7 +58,7 @@ const Contact = () => {
               </div>
             </div>
             <div className='flex justify-end'>
-              <button type="submit" className=" hover:shadow-xl text-white bg-red-500 hover:bg-red-500 px-4 py-2 rounded">Send Message</button>
+              <button type="submit" className=" hover:shadow-xl text-white font-bold bg-red-500 hover:bg-red-600 px-6 py-3 rounded-sm">SEND MESSAGE</button>
             </div>
           </form>
 

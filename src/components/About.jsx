@@ -7,6 +7,8 @@ import founder from '../assets/founder.jpg'
 
 import Message from '../components/Message';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const About = () => {
   return (
     <section >
@@ -59,13 +61,14 @@ const About = () => {
               <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-8 p-8 xl:p-24 text-white">
                 <div className='h-full w-full '>
                   <div className='bg-slate-950 lg:max-w-[500px] max-w-full h-full p-8 md:p-16 mx-auto'>
-                    <h1 className='font-mono text-3xl md:text-5xl mb-4'>Vision</h1>
+                    <h1 className='font-mono text-3xl md:text-5xl mb-4'>Vision <FontAwesomeIcon icon="fa-solid fa-hand-holding-droplet" style={{color: "#fcfcfc",}}/></h1>
+               
                     <p className="font-sans text-sm md:text-lg text-neutral-200">Our vision at CBU WATER TANK MANUFACTURING is to revolutionize the way industries handle fluid storage and distribution challenges. By leveraging cutting-edge technology and unmatched expertise, we strive to be at the forefront of the overhead and pressure tank industry. Our aim is to empower businesses with advanced solutions that promote resource conservation, minimize environmental impact, and drive operational excellence. We envision a world where our tanks are the benchmark of reliability, setting new standards for efficiency, safety, and sustainability in fluid management across various sectors.</p>
                   </div>
                 </div>
                 <div className='h-full w-full '>
                   <div className='bg-slate-950 lg:max-w-[500px] max-w-full h-full p-8 md:p-16 mx-auto'>
-                    <h1 className='font-mono text-3xl md:text-5xl mb-4'>Mission</h1>
+                    <h1 className='font-mono text-3xl md:text-5xl mb-4'>Mission <FontAwesomeIcon icon="fa-solid fa-truck-droplet" style={{color: "#fcfcfc",}}/></h1>
                     <p className="font-sans text-sm md:text-lg text-neutral-200">At CBU WATER TANK MANUFACTURING our mission is to be the leading provider of high-quality overhead and pressure tanks. We are committed to engineering innovative solutions that exceed our customers' expectations while ensuring reliability, safety, and efficiency in every product we deliver. Through a dedication to sustainability and continuous improvement, we aim to enhance industries worldwide by optimizing fluid storage and distribution systems for a better, more connected future.</p>
                   </div>
                 </div>

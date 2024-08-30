@@ -12,9 +12,9 @@ import Footer from './components/Footer';
 
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
+import { faQuoteLeft, faTruckDroplet ,faHandHoldingDroplet } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faQuoteLeft);
+library.add(faQuoteLeft, faTruckDroplet,faHandHoldingDroplet);
 
 function App() {
   const gotoContact = (event, id) => {

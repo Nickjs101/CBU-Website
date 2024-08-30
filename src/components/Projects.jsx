@@ -67,7 +67,7 @@ const Projects = ({gotoContact}) => {
                     <p className="mb-4 article-p text-gray-700">
                         At CBU Manufacturing, we take pride in offering high-quality, durable water tanks tailored to meet your specific needs. Our expert team is dedicated to providing innovative solutions for all your water storage requirements. Browse our projects to see our commitment to excellence in action.
                     </p>
-                    <button  onClick={(e) => gotoContact(e, 'contact')} className="px-4 py-2 bg-red-500 text-white rounded">Contact Us</button>
+                    <button  onClick={(e) => gotoContact(e, 'contact')} className="px-6 py-3 bg-red-500 hover:bg-red-600 hover:shadow-lg text-white font-bold">Contact Us</button>
                 </div>
             </div>
         </section>

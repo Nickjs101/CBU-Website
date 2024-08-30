@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
+import logo from '../assets/Logo.png'
 
 
 const Header = () => {
@@ -24,12 +25,11 @@ const Header = () => {
     <header id='header' className="bg-gradient-to-b from-black/70 to-black/0 text-white px-4 py-8  fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="flex items-center text-gray-700">
-            <h1 className='hidden md:block text-3xl font-bold text-white'>CBU Water Tank Manufacturing</h1>
-            <h1 className='block md:hidden text-3xl font-bold text-white'>CBU Water Tank Mfg.</h1>
-            
+            <h1 className='hidden md:block text-3xl font-bold text-white name-clamp'>CBU Water Tank Manufacturing</h1>
+      
         </a>
-        <nav>
-          <ul className="hidden lg:flex space-x-4 font-bold">
+        <nav className='w-auto'>
+          <ul className="hidden lg:flex gap-4 font-bold">
             <li className="navbutton"><a href="#home" onClick={(e) => gotoSection(e, 'home')} >Home</a></li>
             <li className="navbutton"><a href="#about" onClick={(e) => gotoSection(e, 'about')} >About Us</a></li>
             <li className="navbutton"><a href="#products" onClick={(e) => gotoSection(e, 'products')} >Products</a></li>
@@ -49,7 +49,9 @@ const Header = () => {
                 : 'fixed left-[-100%]'
             }
           >
-                    <h1 className='text-2xl font-bold primary-color ml-6 mt-6'>CBU Water Tank Mfg.</h1>
+                    <h1 className=' block md:hidden text-2xl font-bold primary-color ml-6 mt-6'><img src={logo} className='h-[60px] inline mr-2' alt="" />CBU</h1>
+                    <h1 className=' hidden md:block text-2xl font-bold primary-color ml-6 mt-6'><img src={logo} className='h-[60px] inline mr-2' alt="" />CBU Water Tank Mfg.</h1>
+                    
                     <ul className='p-8 text-2xl'>
                       <li className="navbutton p-2"><a href="#home" onClick={(e) => {gotoSection(e, 'home'); handleNav();}} >Home</a></li>
                       <hr />
