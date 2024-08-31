@@ -27,7 +27,7 @@ const About = () => {
               <div className='w-full h-full bg-neutral-900 lg:bg-transparent lg:bg-gradient-to-r from-black/90 to-black/0 py-8 flex flex-col'>
                 <div className='h-auto w-full lg:w-3/5 xl:w-2/5 pl-4 lg:pl-16 md:my-auto text-neutral-200'>
                   <h2 className="article-h font-bold mb-4">About CBU Water Tank Manufacturing</h2>
-                  <ul className='w-[400px] mb-4 contents article-p space-y-3'>
+                  <ul className='w-[400px] mb-4 contents space-y-3'>
                     <li>
                     CBU Water Tank Manufacturing is a family-owned business with a rich history of providing top-quality water storage solutions in the Philippines. Originally established in 1988 as BLU Untalan Company in Angeles City, our company has been a trusted name in the industry for decades.
                     </li>
