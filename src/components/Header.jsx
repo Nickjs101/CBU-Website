@@ -25,7 +25,7 @@ const Header = () => {
     <header id='header' className="bg-gradient-to-b from-black/70 to-black/0 text-white px-4 py-8  fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="flex items-center text-gray-700">
-            <h1 className='hidden md:block text-3xl font-bold text-white name-clamp'>CBU Water Tank Manufacturing</h1>
+        {/* <img src={logo} className='w-[50px] h-[50px] mr-2' alt="" />*/}<h1 className='hidden md:block text-3xl font-bold text-white name-clamp'>CBU Water Tank Manufacturing</h1> 
       
         </a>
         <nav className='w-auto'>

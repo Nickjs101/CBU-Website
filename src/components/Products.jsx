@@ -11,10 +11,10 @@ const Products = ({ gotoContact }) => {
           Explore Our Premium Water Tank Solutions
         </h2>
         <p className="text-sm md:text-lg text-center mb-24">
-          At CBU Water Tank Manufacturing, we specialize in high-quality pressurized tanks, durable gauges, and customizable storage tanks. Our products are designed to meet diverse fluid storage needs, ensuring{' '}
+        At CBU Water Tank Manufacturing, we specialize in high-quality pressurized tanks, durable gauges, and customizable storage tanks. Our products are engineered to meet a wide range of fluid storage needs, ensuring{' '}
           <span className="text-red-600 text-md md:text-xl font-extrabold">Safety</span>,{' '}
           <span className="text-red-600 text-md md:text-xl font-extrabold">Reliability</span>, and{' '}
-          <span className="text-red-600 text-md md:text-xl font-extrabold">Efficiency</span>. Whether you're looking for a 12-gallon pressurized tank with a base or a fully customized 525-gallon storage tank, we have the perfect solution for you. Our gauges come in various sizes, tailored to fit your specific requirements.{' '}
+          <span className="text-red-600 text-md md:text-xl font-extrabold">Efficiency</span>. Whether you need a 12-gallon pressurized tank with a base or a fully customized 525-gallon storage tank, we have the perfect solution for you. Our gauges are available in various sizes, tailored to fit your specific requirements.{' '}
           <span className="text-md md:text-xl text-red-600 font-bold italic">
             Trust CBU for robust and reliable fluid management solutions.
           </span>

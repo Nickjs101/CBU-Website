@@ -29,16 +29,16 @@ const About = () => {
                   <h2 className="article-h font-bold mb-4">About CBU Water Tank Manufacturing</h2>
                   <ul className='w-[400px] mb-4 contents space-y-3'>
                     <li>
-                    CBU Water Tank Manufacturing is a family-owned business with a rich history of providing top-quality water storage solutions in the Philippines. Originally established in 1988 as BLU Untalan Company in Angeles City, our company has been a trusted name in the industry for decades.
+                    CBU Water Tank Manufacturing is a family-owned business with a proud legacy of delivering top-quality water storage solutions across the Philippines. Founded in 1988 as BLU Untalan Company in Angeles City, we have established ourselves as a trusted name in the industry for over three decades.
                     </li>
                     <li>
-                    In 1995, we took a significant step forward by registering as CBU Water Tank Manufacturing and establishing a full-scale factory dedicated to producing durable and reliable water tanks. This expansion marked the beginning of our journey to becoming a leading water tank manufacturer in the Philippines.
+                    In 1995, we expanded our horizons by rebranding as CBU Water Tank Manufacturing and launching a state-of-the-art factory dedicated to crafting durable and reliable water tanks. This pivotal moment marked our evolution into one of the Philippines' leading water tank manufacturers.
                     </li>
                     <li>
-                    By 1996, our commitment to quality and customer satisfaction enabled us to expand our operations across different regions of the Philippines. Today, we continue to serve a diverse clientele, offering a wide range of water storage solutions designed to meet the unique needs of residential, commercial, and industrial clients nationwide.
+                    By 1996, our unwavering commitment to quality and customer satisfaction allowed us to extend our reach nationwide, serving a diverse range of residential, commercial, and industrial clients. Today, we continue to innovate and expand, offering a comprehensive selection of water storage solutions tailored to meet the unique needs of our customers.
                     </li>
                     <li>
-                    With a legacy of excellence and a future focused on innovation, CBU Water Tank Manufacturing remains your trusted partner for all your water storage needs.
+                    With a rich history of excellence and a forward-looking approach, CBU Water Tank Manufacturing remains your go-to partner for all your water storage needs, ensuring reliable solutions that stand the test of time.
                     </li>
                   </ul>
                   

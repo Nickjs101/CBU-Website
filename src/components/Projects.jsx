@@ -40,12 +40,8 @@ const Projects = ({gotoContact}) => {
         <section id="projects" className="py-16">
             <div className="container mx-auto text-center">
                 <h2 className="article-h font-bold mb-4">
-                    Find a Water Tank Solution with <span className="text-red-500">CBU Manufacturing</span>
+                    Find a <span className="text-red-500">Water Tank Solution </span>Explore Our Projects
                 </h2>
-                <h2 className="article-h font-bold mb-4">
-                    Here's Our Projects
-                </h2>
-                
 
                 <div className="relative overflow-hidden">
                 <div className="flex animate-scroll">
@@ -65,7 +61,7 @@ const Projects = ({gotoContact}) => {
 
                 <div className="mt-8">
                     <p className="mb-4 article-p text-gray-700">
-                        At CBU Manufacturing, we take pride in offering high-quality, durable water tanks tailored to meet your specific needs. Our expert team is dedicated to providing innovative solutions for all your water storage requirements. Browse our projects to see our commitment to excellence in action.
+                        At CBU Manufacturing, we pride ourselves on delivering high-quality, durable water tanks designed to meet your specific needs. Our expert team is committed to providing innovative and reliable solutions for all your water storage requirements. Browse through our projects to witness our dedication to excellence in action.
                     </p>
                     <button  onClick={(e) => gotoContact(e, 'contact')} className="px-6 py-3 bg-red-500 hover:bg-red-600 hover:shadow-lg text-white font-bold">Contact Us</button>
                 </div>
