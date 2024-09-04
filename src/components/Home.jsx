@@ -18,7 +18,7 @@ const Home = ({gotoContact}) => {
       <div className="bg-black bg-opacity-50 h-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center">
         <div className='flex flex-col justify-evenly h-full p-8 md:p-20 lg:pr-0 lg:pl-20 xl:p-20 z-10'>
           <div className=''>
-            <h1 className="text-2xl lg:text-4xl font-bold mb-4">High-Quality Water Tanks for Every Need</h1>
+            <h1 className="text-2xl lg:text-4xl font-bold mb-4">Makers of High Quality Pressurized and Storage Tanks</h1>
             <h1 className="text-6xl lg:text-7xl  font-bold mb-4 z-10 ">Durable, Reliable, and Built to Last</h1>
           </div>
           <div className=''>
