@@ -24,8 +24,8 @@ const Contact = () => {
           </div>
           
 
-          <form action='https://submit-form.com/OWbcYrEsl'>
-            <h2 className="text-xl font-bold mb-2">Get a quote</h2> 
+          <form className='font-sans' action='https://submit-form.com/OWbcYrEsl'>
+            <h2 className="text-xl font-bold font-sans mb-2">Get a quote</h2> 
             <div className="mb-4">
               <label className="block mb-2 text-gray-400 text-sm">Name</label>
               <div className='inputdiv'>

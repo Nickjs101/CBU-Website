@@ -25,11 +25,11 @@ const Header = () => {
     <header id='header' className="bg-gradient-to-b from-black/70 to-black/0 text-white px-4 py-8  fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="flex items-center text-gray-700">
-        {/* <img src={logo} className='w-[50px] h-[50px] mr-2' alt="" />*/}<h1 className='hidden md:block text-3xl font-bold text-white name-clamp'>CBU Water Tank Manufacturing</h1> 
+        {/* <img src={logo} className='w-[50px] h-[50px] mr-2' alt="" />*/}<h1 className='hidden md:block text-3xl font-bold text-white name-clamp'><span className='text-red-500'>CBU</span> Water Tank Manufacturing</h1> 
       
         </a>
         <nav className='w-auto'>
-          <ul className="hidden lg:flex gap-4 font-bold">
+          <ul className="hidden lg:flex gap-4 font-bold font-sans">
             <li className="navbutton"><a href="#home" onClick={(e) => gotoSection(e, 'home')} >Home</a></li>
             <li className="navbutton"><a href="#about" onClick={(e) => gotoSection(e, 'about')} >About Us</a></li>
             <li className="navbutton"><a href="#products" onClick={(e) => gotoSection(e, 'products')} >Products</a></li>
@@ -49,10 +49,10 @@ const Header = () => {
                 : 'fixed left-[-100%]'
             }
           >
-                    <h1 className=' block md:hidden text-2xl font-bold primary-color ml-6 mt-6'><img src={logo} className='h-[60px] inline mr-2' alt="" />CBU</h1>
+                    <h1 className=' block md:hidden text-2xl font-bold primary-color ml-6 mt-6 text-red-500'><img src={logo} className='h-[60px] inline mr-2' alt="" />CBU</h1>
                     <h1 className=' hidden md:block text-2xl font-bold primary-color ml-6 mt-6'><img src={logo} className='h-[60px] inline mr-2' alt="" />CBU Water Tank Mfg.</h1>
                     
-                    <ul className='p-8 text-2xl'>
+                    <ul className='p-8 text-2xl font-sans'>
                       <li className="navbutton p-2"><a href="#home" onClick={(e) => {gotoSection(e, 'home'); handleNav();}} >Home</a></li>
                       <hr />
                       <li className="navbutton p-2"><a href="#about" onClick={(e) => {gotoSection(e, 'about'); handleNav();}} >About Us</a></li>
