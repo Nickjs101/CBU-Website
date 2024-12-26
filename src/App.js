@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       <Header />
       <Home gotoContact={gotoContact} />
-      <About />
+      <About gotoContact={gotoContact} />
       <Team />
       <Products gotoContact={gotoContact} />
       <Projects gotoContact={gotoContact} />

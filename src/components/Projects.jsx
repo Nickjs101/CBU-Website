@@ -61,7 +61,7 @@ const Projects = ({gotoContact}) => {
 
                 <div className="mt-8">
                     <p className="mb-4 article-p text-gray-700">
-                        At CBU Manufacturing, we pride ourselves on delivering high-quality, durable water tanks designed to meet your specific needs. Our expert team is committed to providing innovative and reliable solutions for all your water storage requirements. Browse through our projects to witness our dedication to excellence in action.
+                        At Untalan Water Tank & Steel Manufacturing, we pride ourselves on delivering high-quality, durable water tanks designed to meet your specific needs. Our expert team is committed to providing innovative and reliable solutions for all your water storage requirements. Browse through our projects to witness our dedication to excellence in action.
                     </p>
                     <button  onClick={(e) => gotoContact(e, 'contact')} className="px-6 py-3 bg-red-500 hover:bg-red-600 hover:shadow-lg text-white font-bold">Contact Us</button>
                 </div>
