@@ -19,14 +19,6 @@ const About = ({gotoContact}) => {
   ];
   return (
     <section >
-
-      {/* Quotes */}
-      {/* <div className='w-full h-auto p-24 bg-red-900'>
-        <div className='shadow-lg h-auto w-full flex flex-col items-center flex-16 text-center'>
-        <h1 className=' font-extrabold text-4xl text-neutral-100'>Discover why Untalan Water Tanks are the top choice for reliability and performance.</h1>
-        <a href="#products" onClick={(e) => gotoContact(e, 'projects')} className="bg-red-700 text-white font-bold px-10 py-4 my-8 z-10">Explore Our Products</a>
-        </div>
-      </div> */}
       <div className="bg-gray-100 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us</h2>
