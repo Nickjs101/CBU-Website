@@ -1,74 +1,25 @@
 import React from 'react';
 
-const Contact = () => {
+export default function Contact({ product, onProductChange }) {
   return (
-    <section id="contact" className="bg-neutral-50">
-      <div className="w-full h-auto md:h-auto lg:h-screen flex flex-col-reverse md:flex-row">
-        <iframe title='CBUmap' className='w-full md:w-1/2 h-auto' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5414.835889867087!2d120.61136980865196!3d15.18074911670172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396ed12643ccb23%3A0x58d30a11f0502da4!2sCBU%20Water%20Tank%20Manufacturing!5e0!3m2!1sen!2sph!4v1722836303076!5m2!1sen!2sph"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div className='w-full md:w-1/2 p-4 md:p-12 lg:pr-36 '>
-          <h2 className="article-h font-bold mb-0">Contact Us</h2> 
-          <p className='text-md text-gray-400 mb-8'>Get in touch for durable water tank solutions tailored to your specific storage needs.</p>
-          <div className='flex flex-wrap gap-x-4 gap-y-0 mb-8 text-sm font-sans'>
-            <div className="mb-4 inline-block">
-              <h3 className="text-gray-400 text-xs">Address</h3>
-              <p>7052 Legaspi ext. Duquit-Maisac Mabalacat City Pampanga</p>
-            </div>
-            <div className="mb-4 inline-block">
-              <h3 className="text-gray-400 text-xs">Phone</h3>
-              <p>0917-623-7040</p>
-            </div>
-            <div className="mb-4 inline-block">
-              <h3 className="text-gray-400 text-xs">Email</h3>
-              <p>cbutanks@gmail.com</p>
-            </div>
-          </div>
-          
-
-          <form className='font-sans' action='https://submit-form.com/OWbcYrEsl'>
-            <h2 className="text-xl font-bold font-sans mb-2">Get a quote</h2> 
-            <div className="mb-4">
-              <label className="block mb-2 text-gray-400 text-sm">Name</label>
-              <div className='inputdiv'>
-                <input className='contactinput' type="text" name='name' placeholder="Input Underline"/>
-                <span className='contactinputspan'></span>
-              </div>
-            </div>
-            <div className="mb-4">
-              <label className="block mb-2 text-gray-400 text-sm">Email</label>
-              <div className='inputdiv'>
-                <input className='contactinput' type="text" name='email' placeholder="Input Underline"/>
-                <span className='contactinputspan'></span>
-              </div>
-            </div>
-            <div className="mb-4">
-              <label className="block mb-2 text-gray-400 text-sm">Phone Number</label>
-              <div className='inputdiv'>
-                <input className='contactinput' type="tel" pattern="[0-9]{11,}" name='phone' placeholder="Input Underline"/>
-                <span className='contactinputspan'></span>
-              </div>
-            </div>
-            <div className="mb-4">
-              <label className="block mb-2 text-gray-400 text-sm">Message</label>
-              <div className='textareadiv'>
-                <textarea className='tarea' type="text" name='message' placeholder="Input Trace"></textarea>
-                <span class="tareabottom tareaspan"></span>
-                <span class="tarearight tareaspan"></span>
-                <span class="tareatop tareaspan"></span>
-                <span class="tarealeft tareaspan"></span>
-              </div>
-            </div>
-            <div className='flex justify-end'>
-              <button type="submit" className=" hover:shadow-xl text-white font-bold bg-red-500 hover:bg-red-600 px-6 py-3 rounded-sm">SEND MESSAGE</button>
-            </div>
-          </form>
-
-        </div>
+    <section id="contact" className="section contact-section" aria-labelledby="contact-title">
+      <div className="contact-copy">
+        <p className="eyebrow">06 / Let’s build something dependable</p>
+        <h2 id="contact-title">Your next project<br />starts here.</h2>
+        <p>Tell us what you need. Our team can help you choose a tank, talk through specifications, or plan a custom order.</p>
+        <a className="contact-phone" href="tel:+639176237040">0917 623 7040 <span aria-hidden="true">↗</span></a>
+        <a className="contact-email" href="mailto:cbutanks@gmail.com">cbutanks@gmail.com</a>
+        <div className="contact-address"><p className="eyebrow">Visit our workshop</p><address>7052 Legaspi ext., Duquit-Maisac<br />Mabalacat City, Pampanga, Philippines</address><a className="text-link" href="https://www.google.com/maps/search/?api=1&query=CBU+Water+Tank+Manufacturing+Mabalacat" target="_blank" rel="noreferrer">Get directions <span aria-hidden="true">↗</span></a></div>
       </div>
+      <form className="quote-form" action="https://submit-form.com/OWbcYrEsl" method="POST">
+        <h3>Request a quote</h3><p>Share a few details to get the conversation started.</p>
+        <div className="form-row"><div className="form-field"><label htmlFor="quote-name">Your name <span aria-hidden="true">*</span></label><input id="quote-name" name="name" autoComplete="name" required placeholder="Juan Dela Cruz" /></div><div className="form-field"><label htmlFor="quote-phone">Phone number</label><input id="quote-phone" name="phone" type="tel" autoComplete="tel" placeholder="0917 000 0000" /></div></div>
+        <div className="form-field"><label htmlFor="quote-email">Email address <span aria-hidden="true">*</span></label><input id="quote-email" name="email" type="email" autoComplete="email" required placeholder="you@company.com" /></div>
+        <div className="form-field"><label htmlFor="quote-product">I’m interested in</label><select id="quote-product" name="product" value={product} onChange={event => onProductChange(event.target.value)}><option value="">Help me choose</option><option>Pressurized tank</option><option>Storage tank</option><option>Steel gauge / thickness</option><option>Custom tank</option></select></div>
+        <div className="form-field"><label htmlFor="quote-message">Tell us about your project <span aria-hidden="true">*</span></label><textarea id="quote-message" name="message" rows="4" required placeholder="Tank capacity, quantity, project location, or any questions…" /></div>
+        <p className="form-note">Required fields are marked *. Please share only the contact and project details needed for your inquiry.</p>
+        <button type="submit" className="button button-primary">Send your inquiry <span aria-hidden="true">↗</span></button>
+      </form>
     </section>
-
-
-
   );
-};
-
-export default Contact;
+}

@@ -14,25 +14,19 @@ import beatingImage from '../assets/Process/beating.jpg';
 import couplingImage from '../assets/Process/coupling.jpg';
 import paintingImage from '../assets/Process/painting.jpg';
 
-const Process = () => {
-  return (
-    <section id="process" className="py-16 bg-neutral-800 ">
-      <div className="container mx-auto px-4">
-        <h2 className="article-h font-bold mb-8 text-center text-white">Our Process</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {processSteps.map((step, index) => (
-            <div key={index}>
-              <div className="flex flex-col p-4 items-center align-bottom shadow-md h-[300px] bg-no-repeat bg-cover bg-center bg-white"  style={{ backgroundImage: `url(${step.image})` }}>
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">{step.title}</h3>
-              <p className="text-left text-gray-400">{step.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
+const Process = () => (
+  <section id="process" className="section process-section" aria-labelledby="process-title">
+    <div className="section-heading"><div><p className="eyebrow">04 / From raw steel to ready</p><h2 id="process-title">Care in every cut.<br />Confidence in every tank.</h2></div><p>Take a look inside our workshop, where hands-on craftsmanship meets a considered manufacturing process.</p></div>
+    <div className="process-grid">
+      {processSteps.map((step, index) => (
+        <article className="process-card" key={step.title}>
+          <div className="process-image"><img src={step.image} alt={`Water tank manufacturing: ${step.title.toLowerCase()}`} width="600" height="500" loading="lazy" /><span>{String(index + 1).padStart(2, '0')}</span></div>
+          <h3>{step.title}</h3><p>{step.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+);
 
 // Define process steps with image paths and descriptions
 const processSteps = [

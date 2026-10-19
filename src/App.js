@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
@@ -10,37 +10,27 @@ import Clients from './components/Clients';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faQuoteLeft, faTruckDroplet ,faHandHoldingDroplet } from '@fortawesome/free-solid-svg-icons'
-
-library.add(faQuoteLeft, faTruckDroplet,faHandHoldingDroplet);
-
-function App() {
-  const gotoContact = (event, id) => {
-    event.preventDefault();
-    const section = document.getElementById(id);
-    // const navbarHeight = document.querySelector('#header').offsetHeight; // get the navbar height
-    window.scrollTo({
-      top: section.offsetTop, // adjust the scroll position
-      behavior: 'smooth',
-    });
-}
-
+export default function App() {
+  const [product, setProduct] = useState('');
   return (
-    <div className="App">
+    <>
+      <a className="skip-link" href="#main">Skip to content</a>
       <Header />
-      <Home gotoContact={gotoContact} />
-      <About gotoContact={gotoContact} />
-      <Team />
-      <Products gotoContact={gotoContact} />
-      <Projects gotoContact={gotoContact} />
-      <Process />
-      <Clients />
-      <Contact />
+      <main id="main" tabIndex="-1">
+        <Home />
+        <div className="capability-band" aria-label="Tank and fabrication capabilities">
+          <p>Strength in every detail.</p>
+          <ul><li>Pressure tanks</li><li>Storage tanks</li><li>Custom fabrication</li><li>Nationwide service</li></ul>
+        </div>
+        <Products onRequestQuote={setProduct} />
+        <About />
+        <Projects />
+        <Process />
+        <Team />
+        <Clients />
+        <Contact product={product} onProductChange={setProduct} />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
-
-export default App;

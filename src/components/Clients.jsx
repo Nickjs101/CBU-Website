@@ -59,77 +59,18 @@ import stcatherine from '../assets/Clients/School/stcatherine.jpg'
     { img: stcatherine, name: 'St. Catherine of Alexandria Foundation and Medical Center' },
   ];
 
-const Clients = () => {
+const clientGroups = [
+  { title: 'Hardware & construction', items: HardwareClients },
+  { title: 'Villas & resorts', items: Resort },
+  { title: 'Government', items: Government },
+  { title: 'Schools & medical facilities', items: School },
+];
+
+export default function Clients() {
   return (
-    <section id="clients" className="py-16 bg-gray-100">
-      <div className="container mx-auto">
-        <h2 className="article-h font-bold mb-4 text-center md:text-left">Our Clients</h2>
-        <div className="flex flex-col gap-8">
-          <div>
-            <h3 className="text-xl font-bold mb-2 bg-gray-800 pl-4 text-white">Hardware & Construction Supply</h3>
-            <div className='bg-transparent text-gray-900 max-w-[1200px] grid grid-cols-3 place-items-center md:flex md:flex-wrap md:items-center relative z-10'>
-              {
-                HardwareClients.map((hwclient) => (
-                  <div key={hwclient.name} className='flex flex-col items-center m-4 sm:my-0 w-[70px] md:w-[100px]'>
-                    <div className='w-full h-[100px] flex items-center justify-center'>
-                      <img src={hwclient.img} alt={hwclient.name} className='w-full' />
-                    </div>
-                    <p className='mt-2 text-xs text-gray-400 font-medium font-sans text-center'>{hwclient.name}</p>
-                  </div>
-                ))
-              }
-            </div>
-            
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-2 bg-blue-800 pl-4 text-white">Villas & Resorts</h3>
-            <div className='bg-transparent text-gray-900 max-w-[1200px] mx-auto grid grid-cols-3 place-items-center md:flex md:flex-wrap md:items-center relative z-10'>
-            {
-              Resort.map((resortclient) => (
-                <div key={resortclient.name} className='flex flex-col items-center m-4 sm:my-0 w-[70px] md:w-[100px]'>
-                  <div className='w-full h-[100px] flex items-center justify-center'>
-                    <img src={resortclient.img} alt={resortclient.name} className='max-h-full' />
-                  </div>
-                  <p className='mt-2 text-xs text-gray-400 font-medium font-sans text-center'>{resortclient.name}</p>
-                </div>
-              ))
-            }
-            </div>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-2 bg-red-800 pl-4 text-white">Government Facilities</h3>
-            <div className='bg-transparent text-gray-900 max-w-[1200px] mx-auto grid grid-cols-3 place-items-center md:flex md:flex-wrap md:items-center relative z-10'>
-              {
-                Government.map((govclient) => (
-                  <div key={govclient.name} className='flex flex-col items-center m-4 sm:my-0 w-[70px] md:w-[100px]'>
-                    <div className='w-full h-[100px] flex items-center justify-center'>
-                      <img src={govclient.img} alt={govclient.name} className='w-full' />
-                    </div>
-                    <p className='mt-2 text-xs text-gray-400 font-medium font-sans text-center'>{govclient.name}</p>
-                  </div>
-                ))
-              }
-            </div>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-2 bg-green-800 pl-4 text-white">Medical & Schools</h3>
-            <div className='bg-transparent text-gray-900 max-w-[1200px] mx-auto grid grid-cols-3 place-items-center md:flex md:flex-wrap md:items-center relative z-10'>
-              {
-                School.map((schoolclient) => (
-                  <div key={schoolclient.name} className='flex flex-col items-center m-4 sm:my-0 w-[70px] md:w-[100px]'>
-                    <div className='w-full h-[100px] flex items-center justify-center'>
-                      <img src={schoolclient.img} alt={schoolclient.name} className='w-full' />
-                    </div>
-                    <p className='mt-2 text-xs text-gray-400 font-medium font-sans text-center'>{schoolclient.name}</p>
-                  </div>
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </div>
+    <section id="clients" className="section clients-section" aria-labelledby="clients-title">
+      <div className="section-heading"><div><p className="eyebrow">05 / In good company</p><h2 id="clients-title">Supporting the places<br />our communities rely on.</h2></div><p>Working with businesses and institutions across hardware, hospitality, government, education, and healthcare.</p></div>
+      <div className="client-groups">{clientGroups.map(group => <div className="client-group" key={group.title}><h3>{group.title}</h3><div className="client-grid">{group.items.map(client => <figure key={client.name}><div><img src={client.img} alt={client.name} width="140" height="100" loading="lazy" /></div><figcaption>{client.name}</figcaption></figure>)}</div></div>)}</div>
     </section>
   );
-};
-
-export default Clients;
+}
